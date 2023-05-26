@@ -39,26 +39,32 @@
 // Wild Wild Life
 ////////////////////////////////
 
-const wolfy = ["Wolfy", "wolf", 16, "Yukon Territory"]
-const sharky = ["Sharky", "shark", 20, "Left Coast"]
-const plantee = ["Plantee", "plant",  5000 , "Mordor"]
-const porgee = ["Porgee", "Porg", 186, "Ahch-To"]
-const dart = ["D'Art" , "Demogorgan Dog", 2, "Upside Down"]
+// const wolfy = ["Wolfy", "wolf", 16, "Yukon Territory"]
+// const sharky = ["Sharky", "shark", 20, "Left Coast"]
+// const plantee = ["Plantee", "plant",  5000 , "Mordor"]
+// const porgee = ["Porgee", "Porg", 186, "Ahch-To"]
+// const dart = ["D'Art" , "Demogorgan Dog", 2, "Upside Down"]
 
-wolfy.pop();
-wolfy.push("Gotham City")
-plantee[2] += 1;
-dart.push("Hawkins")
-wolfy.shift();
-wolfy.unshift("Gameboy")
+// wolfy.pop();
+// wolfy.push("Gotham City")
+// plantee[2] += 1;
+// dart.push("Hawkins")
+// wolfy.shift();
+// wolfy.unshift("Gameboy")
 
-console.log(wolfy);
-console.log(plantee);
+// console.log(wolfy);
+// console.log(plantee);
+// console.log(dart)
 
 ////////////////////////////////
 // Yell at the Ninja Turtules
 ////////////////////////////////
 
+let turtles = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo']
+
+for(i of turtles) {
+    console.log(i.toUpperCase());
+}
 ////////////////////////////////
 // Methods, Revisited
 ////////////////////////////////
