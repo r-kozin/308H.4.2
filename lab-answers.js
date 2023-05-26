@@ -60,11 +60,50 @@
 // Yell at the Ninja Turtules
 ////////////////////////////////
 
-let turtles = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo']
+// let turtles = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo']
 
-for(i of turtles) {
-    console.log(i.toUpperCase());
-}
+// for(i of turtles) {
+//     console.log(i.toUpperCase());
+// }
+
 ////////////////////////////////
 // Methods, Revisited
 ////////////////////////////////
+
+const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
+
+for(i in favMovies) {
+    if (favMovies[i] === 'Titanic') {
+        console.log(i);
+    }
+}
+
+favMovies.sort();
+favMovies.pop();
+favMovies.push('Guardians of the Galaxy');
+favMovies.reverse();
+favMovies.shift();
+favMovies.unshift(); // returns 18
+
+for(c in favMovies) {
+    if (favMovies[c] === 'Django Unchained') {
+        favMovies.splice(c, 0, 'Avatar');
+        break;
+    }
+}
+
+let halfmovies = Math.floor(favMovies.length / 2); // added Math.floor to ensure median index is a whole number
+
+console.log(halfmovies); //just checking that the median index is found and a whole number
+
+let newFavMovies = favMovies.slice(halfmovies, favMovies.length); // step 12
+
+console.log(newFavMovies); // step 12
+
+console.log(favMovies)
+
+for (x in favMovies) {
+    if (favMovies[x] === 'Fast and Furious') {
+        console.log(x);
+    }
+}
