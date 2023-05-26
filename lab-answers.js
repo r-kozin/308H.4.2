@@ -70,40 +70,55 @@
 // Methods, Revisited
 ////////////////////////////////
 
-const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
+// const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
 
-for(i in favMovies) {
-    if (favMovies[i] === 'Titanic') {
-        console.log(i);
-    }
-}
+// for(i in favMovies) {
+//     if (favMovies[i] === 'Titanic') {
+//         console.log(i);
+//     }
+// }
 
-favMovies.sort();
-favMovies.pop();
-favMovies.push('Guardians of the Galaxy');
-favMovies.reverse();
-favMovies.shift();
-favMovies.unshift(); // returns 18
+// favMovies.sort();
+// favMovies.pop();
+// favMovies.push('Guardians of the Galaxy');
+// favMovies.reverse();
+// favMovies.shift();
+// favMovies.unshift(); // returns 18
 
-for(c in favMovies) {
-    if (favMovies[c] === 'Django Unchained') {
-        favMovies.splice(c, 0, 'Avatar');
-        break;
-    }
-}
+// for(c in favMovies) {
+//     if (favMovies[c] === 'Django Unchained') {
+//         favMovies.splice(c, 0, 'Avatar');
+//         break;
+//     }
+// }
 
-let halfmovies = Math.floor(favMovies.length / 2); // added Math.floor to ensure median index is a whole number
+// let halfmovies = Math.floor(favMovies.length / 2); // added Math.floor to ensure median index is a whole number
 
-console.log(halfmovies); //just checking that the median index is found and a whole number
+// console.log(halfmovies); //just checking that the median index is found and a whole number
 
-let newFavMovies = favMovies.slice(halfmovies, favMovies.length); // step 12
+// let newFavMovies = favMovies.slice(halfmovies, favMovies.length); // step 12
 
-console.log(newFavMovies); // step 12
+// console.log(newFavMovies); // step 12
 
-console.log(favMovies)
+// console.log(favMovies) //step 14
 
-for (x in favMovies) {
-    if (favMovies[x] === 'Fast and Furious') {
-        console.log(x);
-    }
-}
+// for (x in favMovies) {
+//     if (favMovies[x] === 'Fast and Furious') {
+//         console.log(x);
+//     }
+// }
+
+
+////////////////////////////////
+// Where is Waldo
+////////////////////////////////
+
+const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
+                      ["Lucinda", "Jacc", "Neff", "Snoop"],
+                      ["Petunia", ["Baked Goods", "Waldo"]]];
+
+whereIsWaldo.splice(1,1);
+
+whereIsWaldo[1][2] = "No One"; //at this point neff is located at index [1][2]
+
+console.log(whereIsWaldo[2][1][1]); //at this point waldo is located at index [2][1][1]
