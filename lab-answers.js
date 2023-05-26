@@ -113,12 +113,29 @@
 // Where is Waldo
 ////////////////////////////////
 
-const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
-                      ["Lucinda", "Jacc", "Neff", "Snoop"],
-                      ["Petunia", ["Baked Goods", "Waldo"]]];
+// const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
+//                       ["Lucinda", "Jacc", "Neff", "Snoop"],
+//                       ["Petunia", ["Baked Goods", "Waldo"]]];
 
-whereIsWaldo.splice(1,1);
+// whereIsWaldo.splice(1,1);
 
-whereIsWaldo[1][2] = "No One"; //at this point neff is located at index [1][2]
+// whereIsWaldo[1][2] = "No One"; //at this point neff is located at index [1][2]
 
-console.log(whereIsWaldo[2][1][1]); //at this point waldo is located at index [2][1][1]
+// console.log(whereIsWaldo[2][1][1]); //at this point waldo is located at index [2][1][1]
+
+
+////////////////////////////////
+// Excited Kitten
+////////////////////////////////
+
+let logMe = ["Love me, pet me! HSSSSSS!", "...human... why you taking pictures of me...?", "...the catnip made me do it...", "...why does the red dot always get away...?"]
+let rando = 0
+let mathVar = 0;
+
+for (let i = 0; i < 20; i++) {
+    if (i % 2 === 0){
+        rando = Math.floor(logMe.length * Math.random()) //takes the length of the array and times it by a random number 0-1, rounds down, sets rando equal to it
+        console.log(logMe[rando]);
+    }
+    else console.log(logMe[0]);
+}
